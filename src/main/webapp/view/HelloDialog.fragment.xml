@@ -9,6 +9,9 @@
             src="sap-icon://hello-world"
             size="8rem"
             class="sapUiMediumMargin"/>
+         <Text
+            text="Hello {/recipient/name}"
+            class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
       </content>
       <beginButton>
          <Button
@@ -17,7 +20,7 @@
       </beginButton>
    <endButton>
          <Button
-            text="{i18n>dialogCloseButtonText}"
+            text="{i18n>dialogCancelButtonText}"
             press="onCloseDialog"/>
       </endButton>     
    </Dialog>

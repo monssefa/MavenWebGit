@@ -9,6 +9,15 @@
 	"description": "{{appDescription}}",
 	"applicationVersion": {
 	  "version": "1.0.0"
+	},
+	"dataSources": {
+	  "invoiceRemote": {
+		"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/",
+		"type": "OData",
+		"settings": {
+		  "odataVersion": "2.0"
+		}
+	  }
 	}
   },
   "sap.ui": {
@@ -20,7 +29,7 @@
 	  "phone": true
 	},
 	"supportedThemes": [
-	  "sap_belize"
+	  "sap_bluecrystal"
 	]
   },
   "sap.ui5": {
@@ -38,6 +47,9 @@
 		"settings": {
 		  "bundleName": "sap.ui.demo.wt.i18n.i18n"
 		}
+	  },
+	  "invoice": {
+		"dataSource": "invoiceRemote"
 	  }
 	},
 	"resources": {
